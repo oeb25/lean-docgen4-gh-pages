@@ -8,7 +8,8 @@ package "lean-docgen4-gh-pages" where
     ⟨`pp.unicode.fun, true⟩ -- pretty-prints `fun a ↦ b`
   ]
 
-require "leanprover-community" / "mathlib"
+require mathlib from git
+  "https://github.com/leanprover-community/mathlib4.git"
 
 @[default_target]
 lean_lib «LeanDocgen4GhPages» where
